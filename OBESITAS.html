@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>- - - Preprocessing Dataset - - - &#8212; My sample book</title>
+    <title>- - - Business Understanding - - - &#8212; My sample book</title>
   
   
   
@@ -169,7 +169,9 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><center> - - - <strong>Preprocessing Dataset</strong> - - -</center></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><center> - - - <strong>Business Understanding</strong> - - -</center></a></li>
+
+
 
 
 </ul>
@@ -355,7 +357,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><center> - - - Preprocessing Dataset - - -</center></h1>
+    <h1><center> - - - Business Understanding - - -</center></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,8 +367,41 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><center> - - - <strong>Preprocessing Dataset</strong> - - -</center></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-modelling-center"><center>- - - <strong>Modelling</strong> - - -</center></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><center> - - - <strong>Business Understanding</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan"><strong>1. Tujuan</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitur-yang-digunakan"><strong>2. Fitur yang digunakan</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-data-understanding-center"><center> - - - <strong>Data Understanding</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-data-pada-semua-fitur"><strong>1. Type Data Pada Semua Fitur</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-dataset-beserta-fitur"><strong>2. Deskripsi Dataset Beserta Fitur</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi-data-grafikan-fitur"><strong>3. Eksplorasi Data (Grafikan Fitur)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-proporsi-setiap-kelas"><strong>4. Cek Proporsi Setiap Kelas</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengidentifikasi-missing-value"><strong>5. Mengidentifikasi Missing Value</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengidentifikasi-data-outlier"><strong>6. Mengidentifikasi Data Outlier</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-preprocessing-dataset-center"><center> - - - <strong>Preprocessing Dataset</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding"><strong>1. Encoding</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksekusi-data-outlier"><strong>2. Eksekusi Data Outlier</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi"><strong>3. Normalisasi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-selection"><strong>4. Feature Selection</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset"><strong>5. Split Dataset</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-modelling-center"><center>- - - <strong>Modelling</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-beberapa-metode"><strong>1. Perbandingan Beberapa Metode</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression"><strong>- Linear Regression</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knn"><strong>- KNN</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm"><strong>- SVM</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decission-tree"><strong>- Decission Tree</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest"><strong>- Random Forest</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dapatkan-metode-terbaik"><strong>2. Dapatkan Metode Terbaik</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-dengan-metode-random-forest"><strong>3. Modelling Dengan Metode Random Forest</strong></a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-evaluasi-center"><center>- - - <strong>Evaluasi</strong> - - -</center></a></li>
 </ul>
 
@@ -443,8 +478,10 @@ document.write(`
 </div>
 </div>
 </div>
-<p>#<center><strong>- - - Business Understanding - - -</strong></center></p>
-<p>##<b>1. Tujuan</b></p>
+<section class="tex2jax_ignore mathjax_ignore" id="center-business-understanding-center">
+<h1><center> - - - <strong>Business Understanding</strong> - - -</center><a class="headerlink" href="#center-business-understanding-center" title="Permalink to this heading">#</a></h1>
+<section id="tujuan">
+<h2><strong>1. Tujuan</strong><a class="headerlink" href="#tujuan" title="Permalink to this heading">#</a></h2>
 <p>Memprediksi atau mengukur tingkat sebuah tipe obesitas di masyarakat dengan menggunakan model prediksi. Tingkat obesitas dibedakan menjadi tujuh tipe, yaitu sebagai berikut:</p>
 <ul class="simple">
 <li><p><b>Insufficient Weight</b></p></li>
@@ -456,7 +493,9 @@ document.write(`
 <li><p><b>Obesity Type III</b></p></li>
 </ul>
 <p>Tujuan lainnya adalah memberikan informasi lebih mengenai bahaya dari masing - masing tipe obesitas serta bagaimana cara menghindari penyakit obesitas tersebut, semua ini akan ditampilkan di dalam model prediksi.</p>
-<p>##<b>2. Fitur yang digunakan</b></p>
+</section>
+<section id="fitur-yang-digunakan">
+<h2><strong>2. Fitur yang digunakan</strong><a class="headerlink" href="#fitur-yang-digunakan" title="Permalink to this heading">#</a></h2>
 <p>Pada prediksi tingkat obesitas diatas terdapat fitur - fitur yang digunakan untuk mendapatkan hasil prediksi, diantaranya :</p>
 <ul class="simple">
 <li><p><b><em>Gender</em></b> (Jenis Kelamin)</p></li>
@@ -476,8 +515,11 @@ document.write(`
 <li><p><b><em>Weight</em></b> (Berat)</p></li>
 <li><p><b><em>FAVC</em></b> (Frequent consumption of high caloric food)</p></li>
 </ul>
-<p>#<center> - - - <strong>Data Understanding</strong> - - -</center>
-<strong>Informasi yang bisa didapatkan di Data Understanding ini adalah :</strong></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="center-data-understanding-center">
+<h1><center> - - - <strong>Data Understanding</strong> - - -</center><a class="headerlink" href="#center-data-understanding-center" title="Permalink to this heading">#</a></h1>
+<p><strong>Informasi yang bisa didapatkan di Data Understanding ini adalah :</strong></p>
 <ol class="arabic simple">
 <li><p>Type Data Pada Semua Fitur</p></li>
 <li><p>Deskripsi Dataset Beserta Fitur</p></li>
@@ -486,8 +528,9 @@ document.write(`
 <li><p>Mengidentifikasi Missing Value</p></li>
 <li><p>Mengidentifikasi Data Outlier</p></li>
 </ol>
-<p>##<strong>1. Type Data Pada Semua Fitur</strong>
-Data statistik adalah dapat diartikan sebagai bagian data tunggal, data yang memiliki pesan informasi yang faktual, yang terekam untuk tujuan analisis. Maksudnya data statistik adalah, data yang dapat dijadikan sumber informasi. Dimana data ini berasal dari hasil penyajian, interpretasi dan hasil analisis data.
+<section id="type-data-pada-semua-fitur">
+<h2><strong>1. Type Data Pada Semua Fitur</strong><a class="headerlink" href="#type-data-pada-semua-fitur" title="Permalink to this heading">#</a></h2>
+<p>Data statistik adalah dapat diartikan sebagai bagian data tunggal, data yang memiliki pesan informasi yang faktual, yang terekam untuk tujuan analisis. Maksudnya data statistik adalah, data yang dapat dijadikan sumber informasi. Dimana data ini berasal dari hasil penyajian, interpretasi dan hasil analisis data.
 Berikut adalah Jenis - Jenis Type Data yang digunakan untuk nanti mengidentifikasikan fitur dataset ini :</p>
 <ol class="arabic simple">
 <li><p><b>Data Nominal :</b> Berbeda lagi dengan data nominal. Data nominal adalah data yang sering digunakan untuk menghitung hasil statistik kualitatif. Data nominal digunakan untuk membantu dalam memberikan label pada variabel tanpa memberikan nilai numerik. Dimana numerik dapat diganti dengan huruf, simbol, jenis kelamin atau menggunakan kata lain.</p></li>
@@ -1000,8 +1043,10 @@ Berikut adalah Jenis - Jenis Type Data yang digunakan untuk nanti mengidentifika
   </div>
 </div></div>
 </div>
-<p>##<strong>2. Deskripsi Dataset Beserta Fitur</strong>
-Dataset ini mencakup data estimasi tingkat obesitas pada individu dari negara Meksiko, Peru dan Kolombia, berdasarkan kebiasaan makan dan kondisi fisiknya. Data tersebut berisi 17 atribut dan 2111 record, record tersebut diberi label dengan variabel kelas <b><em>NObesity</em></b> (Tingkat Obesitas), yang memungkinkan klasifikasi data menggunakan nilai :</p>
+</section>
+<section id="deskripsi-dataset-beserta-fitur">
+<h2><strong>2. Deskripsi Dataset Beserta Fitur</strong><a class="headerlink" href="#deskripsi-dataset-beserta-fitur" title="Permalink to this heading">#</a></h2>
+<p>Dataset ini mencakup data estimasi tingkat obesitas pada individu dari negara Meksiko, Peru dan Kolombia, berdasarkan kebiasaan makan dan kondisi fisiknya. Data tersebut berisi 17 atribut dan 2111 record, record tersebut diberi label dengan variabel kelas <b><em>NObesity</em></b> (Tingkat Obesitas), yang memungkinkan klasifikasi data menggunakan nilai :</p>
 <ul class="simple">
 <li><p><b>Berat Badan Tidak Cukup</b> ( Ini mengindikasikan bahwa seseorang memiliki BMI di bawah kisaran yang dianggap sehat. Orang dengan berat badan tidak cukup mungkin mengalami masalah kesehatan karena kekurangan gizi )</p></li>
 <li><p><b>Berat Badan Normal</b> ( Ini mengindikasikan bahwa seseorang memiliki BMI dalam kisaran yang dianggap sehat. Ini adalah kategori yang diinginkan karena biasanya memiliki risiko lebih rendah terhadap penyakit terkait obesitas )</p></li>
@@ -1080,8 +1125,10 @@ memory usage: 280.5+ KB
 </div>
 </div>
 </div>
-<p>##<strong>3. Eksplorasi Data (Grafikan Fitur)</strong>
-Eksplorasi data, dalam konteks analisis data, adalah proses untuk menggali, memahami, dan memvisualisasikan data dalam rangka memahami pola, tren, dan wawasan yang mungkin terkandung dalam data tersebut. Grafikan fitur (feature visualization) adalah bagian penting dari eksplorasi data yang melibatkan pembuatan grafik atau visualisasi untuk mewakili fitur atau variabel dalam dataset. Pada proses ini bisa dilihat di bawah dengan menggunakan code.</p>
+</section>
+<section id="eksplorasi-data-grafikan-fitur">
+<h2><strong>3. Eksplorasi Data (Grafikan Fitur)</strong><a class="headerlink" href="#eksplorasi-data-grafikan-fitur" title="Permalink to this heading">#</a></h2>
+<p>Eksplorasi data, dalam konteks analisis data, adalah proses untuk menggali, memahami, dan memvisualisasikan data dalam rangka memahami pola, tren, dan wawasan yang mungkin terkandung dalam data tersebut. Grafikan fitur (feature visualization) adalah bagian penting dari eksplorasi data yang melibatkan pembuatan grafik atau visualisasi untuk mewakili fitur atau variabel dalam dataset. Pada proses ini bisa dilihat di bawah dengan menggunakan code.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1219,8 +1266,10 @@ Eksplorasi data, dalam konteks analisis data, adalah proses untuk menggali, mema
 <img alt="_images/3f19a6a97c90901cd970456459fd70b7e227cc64c55b8f36999a6affb49ef8a6.png" src="_images/3f19a6a97c90901cd970456459fd70b7e227cc64c55b8f36999a6affb49ef8a6.png" />
 </div>
 </div>
-<p>##<strong>4. Cek Proporsi Setiap Kelas</strong>
-Cek proporsi kelas pada dataset merupakan langkah yang penting dalam analisis data, terutama dalam konteks klasifikasi atau pemodelan prediktif. Proporsi kelas merujuk pada seberapa seimbang atau tidak seimbangnya jumlah sampel yang termasuk dalam setiap kelas pada suatu dataset.
+</section>
+<section id="cek-proporsi-setiap-kelas">
+<h2><strong>4. Cek Proporsi Setiap Kelas</strong><a class="headerlink" href="#cek-proporsi-setiap-kelas" title="Permalink to this heading">#</a></h2>
+<p>Cek proporsi kelas pada dataset merupakan langkah yang penting dalam analisis data, terutama dalam konteks klasifikasi atau pemodelan prediktif. Proporsi kelas merujuk pada seberapa seimbang atau tidak seimbangnya jumlah sampel yang termasuk dalam setiap kelas pada suatu dataset.
 Sebelumnya, kami telah melakukan pengecekan proporsi kelas pada kolom target, dan berikut adalah hasilnya:</p>
 <ol class="arabic simple">
 <li><p>Obesity_Type_I: 351</p></li>
@@ -1254,8 +1303,10 @@ Name: NObeyesdad, dtype: int64
 </div>
 </div>
 </div>
-<p>##<strong>5. Mengidentifikasi Missing Value</strong>
-Fitur-fitur dalam dataset ini telah diperiksa dengan cermat menggunakan kode analisis data, dan hasilnya menunjukkan bahwa <b><i>tidak ada missing value</i></b> dalam fitur-fitur tersebut. Selain itu, informasi yang terdapat di website UCI yang menyediakan dataset ini juga mengkonfirmasi bahwa fitur-fitur dalam dataset ini tidak memiliki missing value. Oleh karena itu, kita dapat dengan yakin menganggap bahwa dataset ini telah bersih dari missing value, yang memudahkan analisis data yang lebih lanjut.</p>
+</section>
+<section id="mengidentifikasi-missing-value">
+<h2><strong>5. Mengidentifikasi Missing Value</strong><a class="headerlink" href="#mengidentifikasi-missing-value" title="Permalink to this heading">#</a></h2>
+<p>Fitur-fitur dalam dataset ini telah diperiksa dengan cermat menggunakan kode analisis data, dan hasilnya menunjukkan bahwa <b><i>tidak ada missing value</i></b> dalam fitur-fitur tersebut. Selain itu, informasi yang terdapat di website UCI yang menyediakan dataset ini juga mengkonfirmasi bahwa fitur-fitur dalam dataset ini tidak memiliki missing value. Oleh karena itu, kita dapat dengan yakin menganggap bahwa dataset ini telah bersih dari missing value, yang memudahkan analisis data yang lebih lanjut.</p>
 <p><strong>Penjelasan code yang dipakai</strong></p>
 <p><b> 1. Mengecek apakah ada nilai NaN dalam DataFrame:</b></p>
 <ul>
@@ -1311,8 +1362,10 @@ Index: []
 </div>
 </div>
 </div>
-<p>##<strong>6. Mengidentifikasi Data Outlier</strong>
-Data outlier (pencilan) merujuk pada nilai atau observasi yang secara signifikan berbeda dari nilai-nilai lain dalam sebuah dataset. Outlier dapat muncul sebagai nilai yang jauh di atas atau di bawah nilai-nilai yang lain, dan mereka dapat memiliki dampak signifikan terhadap analisis statistik dan model prediktif. Identifikasi dan penanganan outlier adalah langkah penting dalam analisis data.</p>
+</section>
+<section id="mengidentifikasi-data-outlier">
+<h2><strong>6. Mengidentifikasi Data Outlier</strong><a class="headerlink" href="#mengidentifikasi-data-outlier" title="Permalink to this heading">#</a></h2>
+<p>Data outlier (pencilan) merujuk pada nilai atau observasi yang secara signifikan berbeda dari nilai-nilai lain dalam sebuah dataset. Outlier dapat muncul sebagai nilai yang jauh di atas atau di bawah nilai-nilai yang lain, dan mereka dapat memiliki dampak signifikan terhadap analisis statistik dan model prediktif. Identifikasi dan penanganan outlier adalah langkah penting dalam analisis data.</p>
 <p><strong>Dampak Data Outlier:</strong></p>
 <ul class="simple">
 <li><p><strong>Pengaruh Terhadap Statistik Deskriptif:</strong> Outlier dapat mempengaruhi nilai rata-rata (mean) dan menggeser distribusi data, sehingga menghasilkan estimasi yang bias.</p></li>
@@ -1360,6 +1413,8 @@ Data outlier (pencilan) merujuk pada nilai atau observasi yang secara signifikan
 </div>
 </div>
 </div>
+</section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="center-preprocessing-dataset-center">
 <h1><center> - - - <strong>Preprocessing Dataset</strong> - - -</center><a class="headerlink" href="#center-preprocessing-dataset-center" title="Permalink to this heading">#</a></h1>
 <p>Preprocessing data adalah serangkaian langkah yang dilakukan untuk membersihkan, mengubah, dan menyesuaikan data mentah menjadi bentuk yang lebih sesuai untuk analisis atau pemodelan. <b>Tujuan utama</b> dari preprocessing data adalah untuk memastikan bahwa data yang digunakan dalam analisis atau pembangunan model adalah data yang berkualitas tinggi, dapat diandalkan, dan sesuai dengan kebutuhan spesifik proyek atau tugas.</p>
@@ -1406,8 +1461,9 @@ Data outlier (pencilan) merujuk pada nilai atau observasi yang secara signifikan
 <li><p>Feature Selection</p></li>
 <li><p>Split Dataset</p></li>
 </ol>
-<p>##<strong>1. Encoding</strong>
-Preprocessing encoding adalah proses transformasi data mentah atau kategori menjadi format yang dapat dipahami oleh algoritma pembelajaran mesin atau model statistik.</p>
+<section id="encoding">
+<h2><strong>1. Encoding</strong><a class="headerlink" href="#encoding" title="Permalink to this heading">#</a></h2>
+<p>Preprocessing encoding adalah proses transformasi data mentah atau kategori menjadi format yang dapat dipahami oleh algoritma pembelajaran mesin atau model statistik.</p>
 <p>Pada proses preprocessing Encoding menggunakan teknik <b>Label Encoding</b>, dimana Ini digunakan untuk mengganti nilai-nilai dalam variabel kategori dengan bilangan bulat. Setiap kategori diberi label numerik unik. Ini berguna ketika variabel kategori memiliki urutan atau tingkatan yang dapat diurutkan. Contohnya, mengubah kategori “rendah,” “sedang,” “tinggi” menjadi 1, 2, 3.</p>
 <p><b>Contoh :</b></p>
 <p>Misalkan kita memiliki suatu variabel kategorikal X dengan k nilai unik (kategori). Proses Label Encoding akan mengassign sebuah nilai numerik unik untuk setiap kategori. Rumus Label Encoding dapat dinyatakan sebagai berikut:</p>
@@ -1481,9 +1537,11 @@ dimana \)</span>i$ adalah urutan dari nilai unik tersebut.</p></li>
 </div>
 </div>
 </div>
-<p>##<strong>2. Eksekusi Data Outlier</strong>
-Outlier adalah titik data yang signifikan atau ekstrem yang berbeda secara signifikan dari sebagian besar data dalam suatu himpunan. Dalam konteks statistik dan analisis data, outlier dapat memberikan dampak yang signifikan pada hasil analisis karena mereka mewakili nilai-nilai yang jauh dari kebanyakan data. Oleh karena itu, mengidentifikasi dan menangani outlier menjadi langkah penting dalam menyediakan data yang baik untuk analisis atau pembangunan model. Cek data outlier ini memanfaatkan z-score untuk mendeteksi outlier dan kemudian menghapusnya dari DataFrame. Berikut adalah langkah dalam cek dan penanganan data outlier :</p>
-<p><b>1. Funsgi ‘detect_outliers’ :</b></p>
+</section>
+<section id="eksekusi-data-outlier">
+<h2><strong>2. Eksekusi Data Outlier</strong><a class="headerlink" href="#eksekusi-data-outlier" title="Permalink to this heading">#</a></h2>
+<p>Outlier adalah titik data yang signifikan atau ekstrem yang berbeda secara signifikan dari sebagian besar data dalam suatu himpunan. Dalam konteks statistik dan analisis data, outlier dapat memberikan dampak yang signifikan pada hasil analisis karena mereka mewakili nilai-nilai yang jauh dari kebanyakan data. Oleh karena itu, mengidentifikasi dan menangani outlier menjadi langkah penting dalam menyediakan data yang baik untuk analisis atau pembangunan model. Cek data outlier ini memanfaatkan z-score untuk mendeteksi outlier dan kemudian menghapusnya dari DataFrame. Berikut adalah langkah dalam cek dan penanganan data outlier :</p>
+<p><b>1. Fungsi ‘detect_outliers’ :</b></p>
 <ul class="simple">
 <li><p>Fungsi ini menerima DataFrame dan nilai ambang (threshold) sebagai parameter.</p></li>
 <li><p>Menghitung z-score untuk setiap elemen dalam DataFrame menggunakan fungsi ‘stats.zscore’.</p></li>
@@ -1571,8 +1629,10 @@ Name: NObeyesdad, dtype: int64
 </div>
 </div>
 </div>
-<p>##<strong>3. Normalisasi</strong>
-Normalisasi Min-Max adalah salah satu teknik preprocessing data yang digunakan untuk mengubah skala data numerik ke dalam rentang tertentu, biasanya dari 0 hingga 1. Tujuan utama dari normalisasi Min-Max adalah untuk menjaga skala data sehingga nilai-nilai dari berbagai fitur atau variabel memiliki rentang yang serupa, sehingga model pembelajaran mesin dapat bekerja lebih efisien dan tidak terpengaruh oleh perbedaan skala.</p>
+</section>
+<section id="normalisasi">
+<h2><strong>3. Normalisasi</strong><a class="headerlink" href="#normalisasi" title="Permalink to this heading">#</a></h2>
+<p>Normalisasi Min-Max adalah salah satu teknik preprocessing data yang digunakan untuk mengubah skala data numerik ke dalam rentang tertentu, biasanya dari 0 hingga 1. Tujuan utama dari normalisasi Min-Max adalah untuk menjaga skala data sehingga nilai-nilai dari berbagai fitur atau variabel memiliki rentang yang serupa, sehingga model pembelajaran mesin dapat bekerja lebih efisien dan tidak terpengaruh oleh perbedaan skala.</p>
 <p><b>Rumus Normalisasi MinMax</b>:
 $<span class="math notranslate nohighlight">\(X_{\text{normalized}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}\)</span>$</p>
 <p>Keterangan :</p>
@@ -2135,8 +2195,10 @@ $<span class="math notranslate nohighlight">\(X_{\text{normalized}} = \frac{X - 
   </div>
 </div></div>
 </div>
-<p>##<strong>4. Feature Selection</strong>
-<b>Feature Selection (pemilihan fitur)</b> adalah proses memilih subset fitur yang paling relevan dan informatif dari suatu dataset untuk digunakan dalam pembangunan model atau analisis data. Tujuan utama dari feature selection adalah untuk meningkatkan kinerja model dengan mengurangi kompleksitas dan meningkatkan interpretabilitas, sambil mempertahankan atau meningkatkan keakuratan prediksi. Pada proses seleksi fitur ini menggunakan fungsi <b>Mutual Information</b>.</p>
+</section>
+<section id="feature-selection">
+<h2><strong>4. Feature Selection</strong><a class="headerlink" href="#feature-selection" title="Permalink to this heading">#</a></h2>
+<p><b>Feature Selection (pemilihan fitur)</b> adalah proses memilih subset fitur yang paling relevan dan informatif dari suatu dataset untuk digunakan dalam pembangunan model atau analisis data. Tujuan utama dari feature selection adalah untuk meningkatkan kinerja model dengan mengurangi kompleksitas dan meningkatkan interpretabilitas, sambil mempertahankan atau meningkatkan keakuratan prediksi. Pada proses seleksi fitur ini menggunakan fungsi <b>Mutual Information</b>.</p>
 <p><b>Mutual Information (Informasi Timbal Balik)</b> adalah suatu metrik yang digunakan untuk mengukur seberapa banyak pengetahuan tentang suatu variabel dapat memberikan wawasan tentang variabel lainnya. Dalam konteks feature selection atau pemilihan fitur, mutual information digunakan untuk mengukur seberapa informatif suatu fitur terhadap variabel target atau variabel kelas.</p>
 <p><b>Rumus Mutual Information : </b></p>
 <div class="math notranslate nohighlight">
@@ -2265,8 +2327,10 @@ Seleksi fitur dengan mutual information harus dilakukan dengan hati-hati untuk m
 </div>
 </div>
 </div>
-<p>##<strong>5. Split Dataset</strong>
-Pembagian dataset (split dataset) merujuk pada proses memisahkan dataset menjadi dua atau lebih bagian untuk digunakan dalam pelatihan dan pengujian model. Pembagian ini diperlukan untuk menguji kinerja model pada data yang tidak digunakan selama pelatihan, sehingga kita dapat mengukur sejauh mana model tersebut dapat menggeneralisasi pola dari data yang belum pernah dilihat sebelumnya. Dengan melakukan pembagian dataset, kita dapat menghindari overfitting model pada data pelatihan dan memberikan perkiraan yang lebih baik tentang seberapa baik model akan berkinerja pada data yang belum pernah dilihat sebelumnya.</p>
+</section>
+<section id="split-dataset">
+<h2><strong>5. Split Dataset</strong><a class="headerlink" href="#split-dataset" title="Permalink to this heading">#</a></h2>
+<p>Pembagian dataset (split dataset) merujuk pada proses memisahkan dataset menjadi dua atau lebih bagian untuk digunakan dalam pelatihan dan pengujian model. Pembagian ini diperlukan untuk menguji kinerja model pada data yang tidak digunakan selama pelatihan, sehingga kita dapat mengukur sejauh mana model tersebut dapat menggeneralisasi pola dari data yang belum pernah dilihat sebelumnya. Dengan melakukan pembagian dataset, kita dapat menghindari overfitting model pada data pelatihan dan memberikan perkiraan yang lebih baik tentang seberapa baik model akan berkinerja pada data yang belum pernah dilihat sebelumnya.</p>
 <p><strong>Penjelasan code yang digunakan</strong></p>
 <ol class="arabic simple">
 <li><p><b>Memisahkan Fitur dan Target:</b> Dataset asli (data) dibagi menjadi dua bagian: fitur (X) dan target (Y). Fitur adalah kolom data yang akan digunakan sebagai input untuk model pembelajaran mesin, sedangkan target adalah kolom yang akan diprediksi oleh model. Dalam kasus ini, kolom ‘NObeyesdad’ adalah target, sementara kolom lainnya dihilangkan (drop) dari fitur.</p></li>
@@ -2314,6 +2378,7 @@ Data Uji   :  383
 </div>
 </div>
 </section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="center-modelling-center">
 <h1><center>- - - <strong>Modelling</strong> - - -</center><a class="headerlink" href="#center-modelling-center" title="Permalink to this heading">#</a></h1>
 <p>Pemodelan (modeling) dalam konteks machine learning adalah proses pembuatan model matematis atau statistik yang dapat memahami pola dalam data dan digunakan untuk membuat prediksi atau keputusan tanpa melibatkan secara eksplisit aturan atau logika yang telah diprogram sebelumnya. Pemodelan merupakan bagian integral dari berbagai aplikasi machine learning, termasuk prediksi, klasifikasi, klastering, dan optimisasi, untuk mencapai pemahaman lebih mendalam tentang data dan membuat keputusan yang lebih baik.</p>
@@ -2343,9 +2408,11 @@ Data Uji   :  383
 <li><p>Dapatkan Metode Terbaik</p></li>
 <li><p>Modelling dengan metode terbaik</p></li>
 </ol>
-<p>##<strong>1. Perbandingan Beberapa Metode</strong></p>
-<p>###<strong>- Linear Regression</strong>
-Regresi linear adalah salah satu teknik dalam statistika dan machine learning yang digunakan untuk memodelkan hubungan linier antara satu atau lebih variabel independen (fitur) dengan variabel dependen (target). Tujuan utama dari regresi linear adalah menemukan garis lurus terbaik (linear) yang paling baik mewakili hubungan antara variabel-variabel tersebut.</p>
+<section id="perbandingan-beberapa-metode">
+<h2><strong>1. Perbandingan Beberapa Metode</strong><a class="headerlink" href="#perbandingan-beberapa-metode" title="Permalink to this heading">#</a></h2>
+<section id="linear-regression">
+<h3><strong>- Linear Regression</strong><a class="headerlink" href="#linear-regression" title="Permalink to this heading">#</a></h3>
+<p>Regresi linear adalah salah satu teknik dalam statistika dan machine learning yang digunakan untuk memodelkan hubungan linier antara satu atau lebih variabel independen (fitur) dengan variabel dependen (target). Tujuan utama dari regresi linear adalah menemukan garis lurus terbaik (linear) yang paling baik mewakili hubungan antara variabel-variabel tersebut.</p>
 <p>Model regresi linear memiliki bentuk umum:</p>
 <p><span class="math notranslate nohighlight">\(Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n + \epsilon\)</span></p>
 <p>Dimana:</p>
@@ -2373,8 +2440,10 @@ Regresi linear adalah salah satu teknik dalam statistika dan machine learning ya
 </div>
 </div>
 </div>
-<p>###<strong>- KNN</strong>
-K-Nearest Neighbors (KNN) adalah salah satu algoritma pembelajaran mesin yang digunakan untuk tugas-tugas klasifikasi dan regresi. KNN termasuk dalam kategori algoritma berbasis instansi atau lazy learning, yang berarti algoritma tersebut tidak “mempelajari” model dari data pelatihan seperti kebanyakan algoritma pembelajaran mesin, melainkan menyimpan seluruh dataset pelatihan dan melakukan prediksi berdasarkan kedekatan antara data baru dan data pelatihan yang telah ada.</p>
+</section>
+<section id="knn">
+<h3><strong>- KNN</strong><a class="headerlink" href="#knn" title="Permalink to this heading">#</a></h3>
+<p>K-Nearest Neighbors (KNN) adalah salah satu algoritma pembelajaran mesin yang digunakan untuk tugas-tugas klasifikasi dan regresi. KNN termasuk dalam kategori algoritma berbasis instansi atau lazy learning, yang berarti algoritma tersebut tidak “mempelajari” model dari data pelatihan seperti kebanyakan algoritma pembelajaran mesin, melainkan menyimpan seluruh dataset pelatihan dan melakukan prediksi berdasarkan kedekatan antara data baru dan data pelatihan yang telah ada.</p>
 <p>Rumus umum KNN untuk klasifikasi:</p>
 <p><span class="math notranslate nohighlight">\(\hat{y} = \text{argmax}_{j} \sum_{i=1}^{K} I(y_i = j)\)</span></p>
 <p>dimana:</p>
@@ -2434,8 +2503,10 @@ k Terbaik: 1 dengan Skor Akurasi: 0.835509138381201
 </div>
 </div>
 </div>
-<p>###<strong>- SVM</strong>
-Support Vector Machine (SVM) adalah algoritma pembelajaran mesin yang dapat digunakan untuk tugas klasifikasi atau regresi. SVM berfokus pada menemukan hyperplane terbaik yang memisahkan dua kelas dalam ruang fitur. Hyperplane ini dipilih agar memiliki margin terbesar antara dua kelas.</p>
+</section>
+<section id="svm">
+<h3><strong>- SVM</strong><a class="headerlink" href="#svm" title="Permalink to this heading">#</a></h3>
+<p>Support Vector Machine (SVM) adalah algoritma pembelajaran mesin yang dapat digunakan untuk tugas klasifikasi atau regresi. SVM berfokus pada menemukan hyperplane terbaik yang memisahkan dua kelas dalam ruang fitur. Hyperplane ini dipilih agar memiliki margin terbesar antara dua kelas.</p>
 <p>Rumus umum:</p>
 <p><span class="math notranslate nohighlight">\(f(x) = \text{sign}(\mathbf{w} \cdot \mathbf{x} + b)\)</span></p>
 <p>dimana:</p>
@@ -2463,8 +2534,10 @@ Support Vector Machine (SVM) adalah algoritma pembelajaran mesin yang dapat digu
 </div>
 </div>
 </div>
-<p>###<strong>- Decission Tree</strong>
-Decision Tree (Pohon Keputusan) adalah algoritma pembelajaran mesin yang digunakan untuk tugas klasifikasi dan regresi. Decision Tree mengambil keputusan berdasarkan serangkaian aturan yang dibangun dari data pelatihan.</p>
+</section>
+<section id="decission-tree">
+<h3><strong>- Decission Tree</strong><a class="headerlink" href="#decission-tree" title="Permalink to this heading">#</a></h3>
+<p>Decision Tree (Pohon Keputusan) adalah algoritma pembelajaran mesin yang digunakan untuk tugas klasifikasi dan regresi. Decision Tree mengambil keputusan berdasarkan serangkaian aturan yang dibangun dari data pelatihan.</p>
 <p>Rumus umum klasifikasi:</p>
 <p><span class="math notranslate nohighlight">\(\hat{y} = f(x)\)</span></p>
 <div class="cell docutils container">
@@ -2485,8 +2558,10 @@ Decision Tree (Pohon Keputusan) adalah algoritma pembelajaran mesin yang digunak
 </div>
 </div>
 </div>
-<p>###<strong>- Random Forest</strong>
-Random Forest adalah suatu ansambel model pohon keputusan yang digunakan untuk tugas klasifikasi dan regresi. Ansambel ini menggabungkan prediksi dari beberapa pohon keputusan untuk meningkatkan kinerja dan ketahanan terhadap overfitting.</p>
+</section>
+<section id="random-forest">
+<h3><strong>- Random Forest</strong><a class="headerlink" href="#random-forest" title="Permalink to this heading">#</a></h3>
+<p>Random Forest adalah suatu ansambel model pohon keputusan yang digunakan untuk tugas klasifikasi dan regresi. Ansambel ini menggabungkan prediksi dari beberapa pohon keputusan untuk meningkatkan kinerja dan ketahanan terhadap overfitting.</p>
 <p>Rumum umum untuk prediksi:</p>
 <ol class="arabic simple">
 <li><p>Klasifikasi (Mayoritas Voting)</p></li>
@@ -2553,7 +2628,10 @@ random_state Terbaik: 2 dengan Skor Akurasi: 0.9686684073107049
 </div>
 </div>
 </div>
-<p>##<strong>2. Dapatkan Metode Terbaik</strong></p>
+</section>
+</section>
+<section id="dapatkan-metode-terbaik">
+<h2><strong>2. Dapatkan Metode Terbaik</strong><a class="headerlink" href="#dapatkan-metode-terbaik" title="Permalink to this heading">#</a></h2>
 <p>Dari hasil perbandingan diatas dengan telah melatih dan mengevaluasi beberapa metode klasifikasi yang berbeda untuk memprediksi target yang sesuai dengan dataset kami. Metode yang kami uji meliputi</p>
 <ul class="simple">
 <li><p>Logistic Regression</p></li>
@@ -2633,7 +2711,9 @@ Akurasi Terbaik: 0.9634464751958225
 <img alt="_images/11991d0466f576d587fdcff3dcb599d6628126f1a0c37fc17b04ea11ffcea6cb.png" src="_images/11991d0466f576d587fdcff3dcb599d6628126f1a0c37fc17b04ea11ffcea6cb.png" />
 </div>
 </div>
-<p>##<strong>3. Modelling Dengan Metode Random Forest</strong></p>
+</section>
+<section id="modelling-dengan-metode-random-forest">
+<h2><strong>3. Modelling Dengan Metode Random Forest</strong><a class="headerlink" href="#modelling-dengan-metode-random-forest" title="Permalink to this heading">#</a></h2>
 <p>Setelah melalui proses pelatihan dan evaluasi berbagai metode klasifikasi, metode terbaik yang dipilih untuk memodelkan hubungan antara fitur dan target adalah <b>Random Forest</b>.</p>
 <p><b>Random Forest</b> adalah sebuah metode ensemble learning yang digunakan dalam pemodelan prediktif dan klasifikasi. Ensemble learning melibatkan penggabungan hasil dari beberapa model untuk meningkatkan kinerja dan akurasi keseluruhan. Random Forest khususnya menggunakan pohon keputusan sebagai model dasar dan menggabungkan prediksi dari beberapa pohon keputusan untuk membuat keputusan akhir.</p>
 <p><b>Random Forest</b> efektif untuk berbagai jenis tugas seperti klasifikasi dan regresi, dan sering digunakan karena kemampuannya yang baik dalam menangani data yang kompleks dan beragam. Keunggulan utamanya termasuk kemampuan untuk mengatasi overfitting, memberikan nilai penting untuk fitur, dan memberikan performa yang baik secara umum.</p>
@@ -2735,6 +2815,7 @@ Model kita kemudian memberikan prediksi kategori obesitas berikut:</p>
 </div>
 </div>
 </div>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="center-evaluasi-center">
 <h1><center>- - - <strong>Evaluasi</strong> - - -</center><a class="headerlink" href="#center-evaluasi-center" title="Permalink to this heading">#</a></h1>
@@ -2890,8 +2971,41 @@ weighted avg       1.00      1.00      1.00       383
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><center> - - - <strong>Preprocessing Dataset</strong> - - -</center></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-modelling-center"><center>- - - <strong>Modelling</strong> - - -</center></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><center> - - - <strong>Business Understanding</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan"><strong>1. Tujuan</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitur-yang-digunakan"><strong>2. Fitur yang digunakan</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-data-understanding-center"><center> - - - <strong>Data Understanding</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-data-pada-semua-fitur"><strong>1. Type Data Pada Semua Fitur</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-dataset-beserta-fitur"><strong>2. Deskripsi Dataset Beserta Fitur</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi-data-grafikan-fitur"><strong>3. Eksplorasi Data (Grafikan Fitur)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-proporsi-setiap-kelas"><strong>4. Cek Proporsi Setiap Kelas</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengidentifikasi-missing-value"><strong>5. Mengidentifikasi Missing Value</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengidentifikasi-data-outlier"><strong>6. Mengidentifikasi Data Outlier</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-preprocessing-dataset-center"><center> - - - <strong>Preprocessing Dataset</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding"><strong>1. Encoding</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksekusi-data-outlier"><strong>2. Eksekusi Data Outlier</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi"><strong>3. Normalisasi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-selection"><strong>4. Feature Selection</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset"><strong>5. Split Dataset</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-modelling-center"><center>- - - <strong>Modelling</strong> - - -</center></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-beberapa-metode"><strong>1. Perbandingan Beberapa Metode</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression"><strong>- Linear Regression</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knn"><strong>- KNN</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svm"><strong>- SVM</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decission-tree"><strong>- Decission Tree</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest"><strong>- Random Forest</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dapatkan-metode-terbaik"><strong>2. Dapatkan Metode Terbaik</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-dengan-metode-random-forest"><strong>3. Modelling Dengan Metode Random Forest</strong></a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#center-evaluasi-center"><center>- - - <strong>Evaluasi</strong> - - -</center></a></li>
 </ul>
 
