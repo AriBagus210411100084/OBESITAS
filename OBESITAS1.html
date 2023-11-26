@@ -64,10 +64,9 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'OBESITAS';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'OBESITAS1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,8 +167,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><center> - - - <strong>Prediction of the Level of Obesity Type</strong> - - -</center></a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="OBESITAS.html"><center> - - - <strong>Prediction of the Level of Obesity Type</strong> - - -</center></a></li>
 
 
 
@@ -246,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FOBESITAS.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FOBESITAS1.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -276,7 +275,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/OBESITAS.ipynb" target="_blank"
+      <li><a href="_sources/OBESITAS1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -424,6 +423,64 @@ document.write(`
 <li><p>NIM   : 210411100084</p></li>
 <li><p>Kelas : PSD-B</p></li>
 </ul>
+<p>###<strong>Connect To Google Drive</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s2">&quot;/content/drive&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-1-bf1647b42bbd&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s2">&quot;/content/drive&quot;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span> <span class="k">def</span> <span class="nf">mount</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">,</span> <span class="n">force_remount</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">120000</span><span class="p">,</span> <span class="n">readonly</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span><span class="w">   </span><span class="sd">&quot;&quot;&quot;Mount your Google Drive at the specified mountpoint path.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">103</span>   <span class="k">return</span> <span class="n">_mount</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">mountpoint</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>   <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">132</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">174</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">175</span>   <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">176</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">96</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="k">if</span> <span class="p">(</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/PSD-B/OBESITAS
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/PSD-B/OBESITAS
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="center-business-understanding-center">
 <h1><center> - - - <strong>Business Understanding</strong> - - -</center><a class="headerlink" href="#center-business-understanding-center" title="Permalink to this heading">#</a></h1>
@@ -516,67 +573,479 @@ Berikut adalah Jenis - Jenis Type Data yang digunakan untuk nanti mengidentifika
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-1-77d89318542c&gt;</span> in <span class="ni">&lt;cell line: 4&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data-obesitas.csv&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">data</span>
+<div class="output text_html">
+  <div id="df-93febda1-309e-4704-8e30-7a5f733a62a9" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">209</span>                 <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">210</span>                     <span class="n">kwargs</span><span class="p">[</span><span class="n">new_arg_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arg_value</span>
-<span class="ne">--&gt; </span><span class="mi">211</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">212</span> 
-<span class="g g-Whitespace">    </span><span class="mi">213</span>         <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">wrapper</span><span class="p">)</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">329</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">find_stack_level</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">330</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">331</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">332</span> 
-<span class="g g-Whitespace">    </span><span class="mi">333</span>         <span class="c1"># error: &quot;Callable[[VarArg(Any), KwArg(Any)], Any]&quot; has no</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">948</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">949</span> 
-<span class="ne">--&gt; </span><span class="mi">950</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">951</span> 
-<span class="g g-Whitespace">    </span><span class="mi">952</span> 
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">603</span> 
-<span class="g g-Whitespace">    </span><span class="mi">604</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">605</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">606</span> 
-<span class="g g-Whitespace">    </span><span class="mi">607</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1440</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1441</span>         <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="ne">-&gt; </span><span class="mi">1442</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1443</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1444</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, f, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1733</span>                 <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1734</span>                     <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1735</span>             <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1736</span>                 <span class="n">f</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1737</span>                 <span class="n">mode</span><span class="p">,</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">854</span>         <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">855</span>             <span class="c1"># Encoding</span>
-<span class="ne">--&gt; </span><span class="mi">856</span>             <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">857</span>                 <span class="n">handle</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">858</span>                 <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;data-obesitas.csv&#39;
-</pre></div>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>family_history_with_overweight</th>
+      <th>FAVC</th>
+      <th>FCVC</th>
+      <th>NCP</th>
+      <th>CAEC</th>
+      <th>SMOKE</th>
+      <th>CH2O</th>
+      <th>SCC</th>
+      <th>FAF</th>
+      <th>TUE</th>
+      <th>CALC</th>
+      <th>MTRANS</th>
+      <th>NObeyesdad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Female</td>
+      <td>21.000000</td>
+      <td>1.620000</td>
+      <td>64.000000</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.000000</td>
+      <td>no</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>no</td>
+      <td>Public_Transportation</td>
+      <td>Normal_Weight</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Female</td>
+      <td>21.000000</td>
+      <td>1.520000</td>
+      <td>56.000000</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>yes</td>
+      <td>3.000000</td>
+      <td>yes</td>
+      <td>3.000000</td>
+      <td>0.000000</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Normal_Weight</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Male</td>
+      <td>23.000000</td>
+      <td>1.800000</td>
+      <td>77.000000</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.000000</td>
+      <td>no</td>
+      <td>2.000000</td>
+      <td>1.000000</td>
+      <td>Frequently</td>
+      <td>Public_Transportation</td>
+      <td>Normal_Weight</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Male</td>
+      <td>27.000000</td>
+      <td>1.800000</td>
+      <td>87.000000</td>
+      <td>no</td>
+      <td>no</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.000000</td>
+      <td>no</td>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>Frequently</td>
+      <td>Walking</td>
+      <td>Overweight_Level_I</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Male</td>
+      <td>22.000000</td>
+      <td>1.780000</td>
+      <td>89.800000</td>
+      <td>no</td>
+      <td>no</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.000000</td>
+      <td>no</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Overweight_Level_II</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2106</th>
+      <td>Female</td>
+      <td>20.976842</td>
+      <td>1.710730</td>
+      <td>131.408528</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>1.728139</td>
+      <td>no</td>
+      <td>1.676269</td>
+      <td>0.906247</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Obesity_Type_III</td>
+    </tr>
+    <tr>
+      <th>2107</th>
+      <td>Female</td>
+      <td>21.982942</td>
+      <td>1.748584</td>
+      <td>133.742943</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.005130</td>
+      <td>no</td>
+      <td>1.341390</td>
+      <td>0.599270</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Obesity_Type_III</td>
+    </tr>
+    <tr>
+      <th>2108</th>
+      <td>Female</td>
+      <td>22.524036</td>
+      <td>1.752206</td>
+      <td>133.689352</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.054193</td>
+      <td>no</td>
+      <td>1.414209</td>
+      <td>0.646288</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Obesity_Type_III</td>
+    </tr>
+    <tr>
+      <th>2109</th>
+      <td>Female</td>
+      <td>24.361936</td>
+      <td>1.739450</td>
+      <td>133.346641</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.852339</td>
+      <td>no</td>
+      <td>1.139107</td>
+      <td>0.586035</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Obesity_Type_III</td>
+    </tr>
+    <tr>
+      <th>2110</th>
+      <td>Female</td>
+      <td>23.664709</td>
+      <td>1.738836</td>
+      <td>133.472641</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Sometimes</td>
+      <td>no</td>
+      <td>2.863513</td>
+      <td>no</td>
+      <td>1.026452</td>
+      <td>0.714137</td>
+      <td>Sometimes</td>
+      <td>Public_Transportation</td>
+      <td>Obesity_Type_III</td>
+    </tr>
+  </tbody>
+</table>
+<p>2111 rows × 17 columns</p>
 </div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-93febda1-309e-4704-8e30-7a5f733a62a9')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-93febda1-309e-4704-8e30-7a5f733a62a9 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-93febda1-309e-4704-8e30-7a5f733a62a9');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-db2e5873-a764-47c8-9490-003b016d08c1">
+  <button class="colab-df-quickchart" onclick="quickchart('df-db2e5873-a764-47c8-9490-003b016d08c1')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-db2e5873-a764-47c8-9490-003b016d08c1 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
 </div>
+    </div>
+  </div>
+</div></div>
 </div>
 </section>
 <section id="deskripsi-dataset-beserta-fitur">
@@ -667,7 +1136,6 @@ memory usage: 280.5+ KB
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
 <span class="c1"># Membuat gambar dengan sembilan subplot dalam tiga baris</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>  <span class="c1"># Atur ukuran gambar</span>
@@ -743,13 +1211,12 @@ memory usage: 280.5+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8588146436ecf39bb060e31fc102922e1d5ab20df10aa71535be0ba10a99c2f2.png" src="_images/8588146436ecf39bb060e31fc102922e1d5ab20df10aa71535be0ba10a99c2f2.png" />
+<img alt="_images/038c5c64dbc885918e348cdde524b1e63fafed91ceafa405b47ba5bd0d3eda0c.png" src="_images/038c5c64dbc885918e348cdde524b1e63fafed91ceafa405b47ba5bd0d3eda0c.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
 <span class="c1"># Membuat gambar dengan empat subplot-box dalam satu baris</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  <span class="c1"># Atur ukuran gambar</span>
@@ -800,7 +1267,7 @@ memory usage: 280.5+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/498148d86e6b1f50d4cb53938c848e31cee1bbc8f01bed6b3f00023f5e35f261.png" src="_images/498148d86e6b1f50d4cb53938c848e31cee1bbc8f01bed6b3f00023f5e35f261.png" />
+<img alt="_images/3f19a6a97c90901cd970456459fd70b7e227cc64c55b8f36999a6affb49ef8a6.png" src="_images/3f19a6a97c90901cd970456459fd70b7e227cc64c55b8f36999a6affb49ef8a6.png" />
 </div>
 </div>
 </section>
@@ -1078,7 +1545,7 @@ dimana \)</span>i$ adalah urutan dari nilai unik tersebut.</p></li>
 <section id="eksekusi-data-outlier">
 <h2><strong>2. Eksekusi Data Outlier</strong><a class="headerlink" href="#eksekusi-data-outlier" title="Permalink to this heading">#</a></h2>
 <p>Outlier adalah titik data yang signifikan atau ekstrem yang berbeda secara signifikan dari sebagian besar data dalam suatu himpunan. Dalam konteks statistik dan analisis data, outlier dapat memberikan dampak yang signifikan pada hasil analisis karena mereka mewakili nilai-nilai yang jauh dari kebanyakan data. Oleh karena itu, mengidentifikasi dan menangani outlier menjadi langkah penting dalam menyediakan data yang baik untuk analisis atau pembangunan model. Cek data outlier ini memanfaatkan z-score untuk mendeteksi outlier dan kemudian menghapusnya dari DataFrame. Berikut adalah langkah dalam cek dan penanganan data outlier :</p>
-<p><b>1. Funsgi ‘detect_outliers’ :</b></p>
+<p><b>1. Fungsi ‘detect_outliers’ :</b></p>
 <ul class="simple">
 <li><p>Fungsi ini menerima DataFrame dan nilai ambang (threshold) sebagai parameter.</p></li>
 <li><p>Menghitung z-score untuk setiap elemen dalam DataFrame menggunakan fungsi ‘stats.zscore’.</p></li>
@@ -1258,7 +1725,9 @@ $<span class="math notranslate nohighlight">\(X_{\text{normalized}} = \frac{X - 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
+<div class="output text_html">
+  <div id="df-ea4d2f92-6442-414a-8b3c-f221b5f618a0" class="colab-df-container">
+    <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1519,7 +1988,216 @@ $<span class="math notranslate nohighlight">\(X_{\text{normalized}} = \frac{X - 
   </tbody>
 </table>
 <p>1914 rows × 17 columns</p>
-</div></div></div>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ea4d2f92-6442-414a-8b3c-f221b5f618a0')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-ea4d2f92-6442-414a-8b3c-f221b5f618a0 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-ea4d2f92-6442-414a-8b3c-f221b5f618a0');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-eb6d35db-533e-49d1-a9b6-3df8b9834794">
+  <button class="colab-df-quickchart" onclick="quickchart('df-eb6d35db-533e-49d1-a9b6-3df8b9834794')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-eb6d35db-533e-49d1-a9b6-3df8b9834794 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
 </div>
 </section>
 <section id="feature-selection">
@@ -1600,7 +2278,7 @@ Seleksi fitur dengan mutual information harus dilakukan dengan hati-hati untuk m
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;
 </pre></div>
 </div>
-<img alt="_images/8e70812ace819290bc36783f2971bd580bf9f3e11ee642d0cc4aa89d03a81f84.png" src="_images/8e70812ace819290bc36783f2971bd580bf9f3e11ee642d0cc4aa89d03a81f84.png" />
+<img alt="_images/ff29df0da0dbad7ca8979350277428bc2c0ae00154da50e602615f293bc6a32e.png" src="_images/ff29df0da0dbad7ca8979350277428bc2c0ae00154da50e602615f293bc6a32e.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1633,22 +2311,22 @@ Seleksi fitur dengan mutual information harus dilakukan dengan hati-hati untuk m
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                           Feature      Rank
-3                           Weight  1.280959
-1                              Age  0.600186
-2                           Height  0.425632
-6                             FCVC  0.405720
-10                            CH2O  0.303303
-12                             FAF  0.283500
-13                             TUE  0.274901
-7                              NCP  0.270292
-0                           Gender  0.251399
-4   family_history_with_overweight  0.161614
-8                             CAEC  0.150322
-14                            CALC  0.107645
-15                          MTRANS  0.067694
-5                             FAVC  0.063384
-11                             SCC  0.002825
-9                            SMOKE  0.000000
+3                           Weight  1.284530
+1                              Age  0.595102
+2                           Height  0.427199
+6                             FCVC  0.411584
+10                            CH2O  0.295589
+7                              NCP  0.286137
+13                             TUE  0.273831
+12                             FAF  0.265925
+0                           Gender  0.227140
+4   family_history_with_overweight  0.168849
+8                             CAEC  0.149584
+14                            CALC  0.115261
+15                          MTRANS  0.060556
+5                             FAVC  0.043872
+9                            SMOKE  0.004469
+11                             SCC  0.000000
 </pre></div>
 </div>
 </div>
@@ -1671,6 +2349,7 @@ Seleksi fitur dengan mutual information harus dilakukan dengan hati-hati untuk m
 <li><p>CALC</p></li>
 <li><p>SCC</p></li>
 <li><p>MTRANS</p></li>
+<li><p>Gender</p></li>
 <li><p>family_history_with_overweight</p></li>
 </ul>
 <p>Fitur diatas tidak masuk kedalam modelling karena tidak semua fitur mempunyai nilai fungsi yang tinggi, oleh karena itu harus di lakukan drop dan hanya mengambil fitur yang penting saja, selain itu setelah fitur - fitur di atas di drop hasil akurasi di Modelling menjadi lebih baik.</p>
@@ -1782,8 +2461,6 @@ Data Uji   :  383
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">filterwarnings</span>
-<span class="n">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 
 <span class="n">akurasi_terbaik</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">k_terbaik</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1908,51 +2585,49 @@ k Terbaik: 1 dengan Skor Akurasi: 0.835509138381201
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 <span class="kn">import</span> <span class="nn">pickle</span>
 
-<span class="n">best_accuracy</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">best_rf_model</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="n">best_n_estimators</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">akurasi_terbaik_rf</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">random_state_terbaik_rf</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">model_terbaik</span> <span class="o">=</span> <span class="kc">None</span>
 
-<span class="k">for</span> <span class="n">n_estimators</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
-    <span class="n">rf_model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">n_estimators</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-    <span class="n">rf_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">random_state_rf</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="n">model2</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">random_state_rf</span><span class="p">)</span>
+    <span class="n">model2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+    <span class="n">hasil_prediksi_rf</span> <span class="o">=</span> <span class="n">model2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">akurasi_rf</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">hasil_prediksi_rf</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;random_state = </span><span class="si">{</span><span class="n">random_state_rf</span><span class="si">}</span><span class="s2">, Skor Akurasi: </span><span class="si">{</span><span class="n">akurasi_rf</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;n_estimators = </span><span class="si">{</span><span class="n">n_estimators</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">akurasi_rf</span> <span class="o">&gt;</span> <span class="n">akurasi_terbaik_rf</span><span class="p">:</span>
+        <span class="n">akurasi_terbaik_rf</span> <span class="o">=</span> <span class="n">akurasi_rf</span>
+        <span class="n">random_state_terbaik_rf</span> <span class="o">=</span> <span class="n">random_state_rf</span>
+        <span class="n">model_terbaik</span> <span class="o">=</span> <span class="n">model2</span>  <span class="c1"># Simpan model dengan akurasi tertinggi</span>
 
-    <span class="k">if</span> <span class="n">accuracy</span> <span class="o">&gt;</span> <span class="n">best_accuracy</span><span class="p">:</span>
-        <span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">accuracy</span>
-        <span class="n">best_rf_model</span> <span class="o">=</span> <span class="n">rf_model</span>
-        <span class="n">best_n_estimators</span> <span class="o">=</span> <span class="n">n_estimators</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2"> dengan n_estimators: </span><span class="si">{</span><span class="n">best_n_estimators</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;random_state Terbaik: </span><span class="si">{</span><span class="n">random_state_terbaik_rf</span><span class="si">}</span><span class="s2"> dengan Skor Akurasi: </span><span class="si">{</span><span class="n">akurasi_terbaik_rf</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n_estimators = 1, Akurasi: 95.09%
-n_estimators = 2, Akurasi: 95.14%
-n_estimators = 3, Akurasi: 98.90%
-n_estimators = 4, Akurasi: 98.80%
-n_estimators = 5, Akurasi: 99.27%
-n_estimators = 6, Akurasi: 99.48%
-n_estimators = 7, Akurasi: 99.58%
-n_estimators = 8, Akurasi: 99.69%
-n_estimators = 9, Akurasi: 99.69%
-n_estimators = 10, Akurasi: 99.74%
-n_estimators = 11, Akurasi: 99.84%
-n_estimators = 12, Akurasi: 99.84%
-n_estimators = 13, Akurasi: 99.79%
-n_estimators = 14, Akurasi: 99.90%
-n_estimators = 15, Akurasi: 99.90%
-n_estimators = 16, Akurasi: 99.95%
-n_estimators = 17, Akurasi: 99.95%
-n_estimators = 18, Akurasi: 99.95%
-n_estimators = 19, Akurasi: 99.90%
-n_estimators = 20, Akurasi: 99.95%
-
-Akurasi terbaik: 99.95% dengan n_estimators: 16.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>random_state = 1, Skor Akurasi: 0.9660574412532638
+random_state = 2, Skor Akurasi: 0.9686684073107049
+random_state = 3, Skor Akurasi: 0.9660574412532638
+random_state = 4, Skor Akurasi: 0.9556135770234987
+random_state = 5, Skor Akurasi: 0.9634464751958225
+random_state = 6, Skor Akurasi: 0.95822454308094
+random_state = 7, Skor Akurasi: 0.9556135770234987
+random_state = 8, Skor Akurasi: 0.9530026109660574
+random_state = 9, Skor Akurasi: 0.9556135770234987
+random_state = 10, Skor Akurasi: 0.9608355091383812
+random_state = 11, Skor Akurasi: 0.9660574412532638
+random_state = 12, Skor Akurasi: 0.9608355091383812
+random_state = 13, Skor Akurasi: 0.9634464751958225
+random_state = 14, Skor Akurasi: 0.9634464751958225
+random_state = 15, Skor Akurasi: 0.9608355091383812
+random_state = 16, Skor Akurasi: 0.9660574412532638
+random_state = 17, Skor Akurasi: 0.9660574412532638
+random_state = 18, Skor Akurasi: 0.9634464751958225
+random_state = 19, Skor Akurasi: 0.9634464751958225
+random_state = 20, Skor Akurasi: 0.9608355091383812
+random_state Terbaik: 2 dengan Skor Akurasi: 0.9686684073107049
 </pre></div>
 </div>
 </div>
@@ -2000,8 +2675,8 @@ $<span class="math notranslate nohighlight">\(\text{Akurasi} = \frac{\text{Jumla
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;scaler.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">scaler_file</span><span class="p">:</span>
-    <span class="n">scaler</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">scaler_file</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># with open(&quot;scaler.pkl&quot;, &quot;rb&quot;) as scaler_file:</span>
+<span class="c1">#     scaler = pickle.load(scaler_file)</span>
 
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">Y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
@@ -2034,10 +2709,10 @@ $<span class="math notranslate nohighlight">\(\text{Akurasi} = \frac{\text{Jumla
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Metode Terbaik: Random Forest
-Akurasi Terbaik: 0.9608355091383812
+Akurasi Terbaik: 0.9634464751958225
 </pre></div>
 </div>
-<img alt="_images/fbfcb269698625c6f9a70184a44ec96568061343b820348a5785dbdd7f3fcc2c.png" src="_images/fbfcb269698625c6f9a70184a44ec96568061343b820348a5785dbdd7f3fcc2c.png" />
+<img alt="_images/11991d0466f576d587fdcff3dcb599d6628126f1a0c37fc17b04ea11ffcea6cb.png" src="_images/11991d0466f576d587fdcff3dcb599d6628126f1a0c37fc17b04ea11ffcea6cb.png" />
 </div>
 </div>
 </section>
@@ -2108,41 +2783,30 @@ Model kita kemudian memberikan prediksi kategori obesitas berikut:</p>
 <p>Kode ini bertujuan untuk mencari model Random Forest dengan jumlah pohon terbaik yang memberikan akurasi tertinggi pada data yang telah diimbangi dan dinormalisasi. Model terbaik tersebut kemudian disimpan untuk penggunaan lebih lanjut.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="kn">import</span> <span class="nn">pickle</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="c1"># memisahkan kolom fitur dan target</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NObeyesdad&#39;</span><span class="p">,</span><span class="s1">&#39;FAVC&#39;</span><span class="p">,</span><span class="s1">&#39;CAEC&#39;</span><span class="p">,</span><span class="s1">&#39;SMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;SCC&#39;</span><span class="p">,</span><span class="s1">&#39;CALC&#39;</span><span class="p">,</span><span class="s1">&#39;MTRANS&#39;</span><span class="p">,</span><span class="s1">&#39;family_history_with_overweight&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;NObeyesdad&#39;</span><span class="p">]</span>
+<span class="c1"># X = data.drop(columns=[&#39;NObeyesdad&#39;,&#39;FAVC&#39;,&#39;CAEC&#39;,&#39;SMOKE&#39;,&#39;SCC&#39;,&#39;CALC&#39;,&#39;MTRANS&#39;], axis =1)</span>
+<span class="c1"># Y = data[&#39;NObeyesdad&#39;]</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;scaler.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">scaler</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
 
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="kn">import</span> <span class="nn">pickle</span>
-
 <span class="n">best_accuracy</span> <span class="o">=</span> <span class="mf">0.0</span>
 <span class="n">best_rf_model</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="n">best_n_estimators</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">for</span> <span class="n">n_estimators</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
     <span class="n">rf_model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">n_estimators</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
     <span class="n">rf_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
 
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;n_estimators = </span><span class="si">{</span><span class="n">n_estimators</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">accuracy</span> <span class="o">&gt;</span> <span class="n">best_accuracy</span><span class="p">:</span>
         <span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">accuracy</span>
         <span class="n">best_rf_model</span> <span class="o">=</span> <span class="n">rf_model</span>
-        <span class="n">best_n_estimators</span> <span class="o">=</span> <span class="n">n_estimators</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2"> dengan n_estimators: </span><span class="si">{</span><span class="n">best_n_estimators</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2"> dengan </span><span class="si">{</span><span class="n">best_rf_model</span><span class="o">.</span><span class="n">n_estimators</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;best_rf_model.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_rf_model</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
@@ -2150,108 +2814,7 @@ Model kita kemudian memberikan prediksi kategori obesitas berikut:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n_estimators = 1, Akurasi: 95.09%
-n_estimators = 2, Akurasi: 95.14%
-n_estimators = 3, Akurasi: 98.90%
-n_estimators = 4, Akurasi: 98.80%
-n_estimators = 5, Akurasi: 99.27%
-n_estimators = 6, Akurasi: 99.48%
-n_estimators = 7, Akurasi: 99.58%
-n_estimators = 8, Akurasi: 99.69%
-n_estimators = 9, Akurasi: 99.69%
-n_estimators = 10, Akurasi: 99.74%
-n_estimators = 11, Akurasi: 99.84%
-n_estimators = 12, Akurasi: 99.84%
-n_estimators = 13, Akurasi: 99.79%
-n_estimators = 14, Akurasi: 99.90%
-n_estimators = 15, Akurasi: 99.90%
-n_estimators = 16, Akurasi: 99.95%
-n_estimators = 17, Akurasi: 99.95%
-n_estimators = 18, Akurasi: 99.95%
-n_estimators = 19, Akurasi: 99.90%
-n_estimators = 20, Akurasi: 99.95%
-n_estimators = 21, Akurasi: 99.95%
-n_estimators = 22, Akurasi: 99.95%
-n_estimators = 23, Akurasi: 99.95%
-n_estimators = 24, Akurasi: 99.95%
-n_estimators = 25, Akurasi: 99.95%
-n_estimators = 26, Akurasi: 99.95%
-n_estimators = 27, Akurasi: 99.95%
-n_estimators = 28, Akurasi: 99.95%
-n_estimators = 29, Akurasi: 99.95%
-n_estimators = 30, Akurasi: 99.95%
-n_estimators = 31, Akurasi: 100.00%
-n_estimators = 32, Akurasi: 100.00%
-n_estimators = 33, Akurasi: 99.95%
-n_estimators = 34, Akurasi: 99.95%
-n_estimators = 35, Akurasi: 99.95%
-n_estimators = 36, Akurasi: 100.00%
-n_estimators = 37, Akurasi: 99.95%
-n_estimators = 38, Akurasi: 100.00%
-n_estimators = 39, Akurasi: 100.00%
-n_estimators = 40, Akurasi: 100.00%
-n_estimators = 41, Akurasi: 100.00%
-n_estimators = 42, Akurasi: 100.00%
-n_estimators = 43, Akurasi: 100.00%
-n_estimators = 44, Akurasi: 100.00%
-n_estimators = 45, Akurasi: 100.00%
-n_estimators = 46, Akurasi: 100.00%
-n_estimators = 47, Akurasi: 100.00%
-n_estimators = 48, Akurasi: 100.00%
-n_estimators = 49, Akurasi: 100.00%
-n_estimators = 50, Akurasi: 100.00%
-n_estimators = 51, Akurasi: 100.00%
-n_estimators = 52, Akurasi: 100.00%
-n_estimators = 53, Akurasi: 100.00%
-n_estimators = 54, Akurasi: 100.00%
-n_estimators = 55, Akurasi: 100.00%
-n_estimators = 56, Akurasi: 100.00%
-n_estimators = 57, Akurasi: 100.00%
-n_estimators = 58, Akurasi: 100.00%
-n_estimators = 59, Akurasi: 100.00%
-n_estimators = 60, Akurasi: 100.00%
-n_estimators = 61, Akurasi: 100.00%
-n_estimators = 62, Akurasi: 100.00%
-n_estimators = 63, Akurasi: 100.00%
-n_estimators = 64, Akurasi: 100.00%
-n_estimators = 65, Akurasi: 100.00%
-n_estimators = 66, Akurasi: 100.00%
-n_estimators = 67, Akurasi: 100.00%
-n_estimators = 68, Akurasi: 100.00%
-n_estimators = 69, Akurasi: 100.00%
-n_estimators = 70, Akurasi: 100.00%
-n_estimators = 71, Akurasi: 100.00%
-n_estimators = 72, Akurasi: 100.00%
-n_estimators = 73, Akurasi: 100.00%
-n_estimators = 74, Akurasi: 100.00%
-n_estimators = 75, Akurasi: 100.00%
-n_estimators = 76, Akurasi: 100.00%
-n_estimators = 77, Akurasi: 100.00%
-n_estimators = 78, Akurasi: 100.00%
-n_estimators = 79, Akurasi: 100.00%
-n_estimators = 80, Akurasi: 100.00%
-n_estimators = 81, Akurasi: 100.00%
-n_estimators = 82, Akurasi: 100.00%
-n_estimators = 83, Akurasi: 100.00%
-n_estimators = 84, Akurasi: 100.00%
-n_estimators = 85, Akurasi: 100.00%
-n_estimators = 86, Akurasi: 100.00%
-n_estimators = 87, Akurasi: 100.00%
-n_estimators = 88, Akurasi: 100.00%
-n_estimators = 89, Akurasi: 100.00%
-n_estimators = 90, Akurasi: 100.00%
-n_estimators = 91, Akurasi: 100.00%
-n_estimators = 92, Akurasi: 100.00%
-n_estimators = 93, Akurasi: 100.00%
-n_estimators = 94, Akurasi: 100.00%
-n_estimators = 95, Akurasi: 100.00%
-n_estimators = 96, Akurasi: 100.00%
-n_estimators = 97, Akurasi: 100.00%
-n_estimators = 98, Akurasi: 100.00%
-n_estimators = 99, Akurasi: 100.00%
-n_estimators = 100, Akurasi: 100.00%
-
-Akurasi terbaik: 100.00% dengan n_estimators: 31.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi terbaik: 100.00% dengan 31.
 </pre></div>
 </div>
 </div>
@@ -2296,7 +2859,7 @@ $<span class="math notranslate nohighlight">\(\text{F1 Score} = 2 \times \frac{\
 <p><b>5. Classification Report:</b></p>
 <ul class="simple">
 <li><p>Menyajikan statistik klasifikasi seperti precision, recall, dan f1-score untuk setiap kelas.</p></li>
-<li><p>Dalam classification report, Anda akan mendapatkan informasi ini untuk setiap kelas.</p></li>
+<li><p>Dalam classification report, Anda akan mendapatkan informasi ini untuk setiap kelas (High, Medium, dan Low).</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2388,15 +2951,6 @@ weighted avg       1.00      1.00      1.00       383
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
